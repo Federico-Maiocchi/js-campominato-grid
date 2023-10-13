@@ -2,7 +2,7 @@
 
 // richiamiamo l'elemento grid dal dom 
 const gridDomeElement = document.querySelector('.grid');
-console.log(gridDomeElement);
+// console.log(gridDomeElement);
 
 
 //richaimo l'elemento button play dal DOM
@@ -19,8 +19,6 @@ btnPlayDomElement.addEventListener('click', function () {
     gridDomeElement.classList.remove('easy', 'medium', 'hard');
 
     
-
-
     // richiamo dal dom il body
     const bodyDomElement = document.querySelector('body')
     console.log(bodyDomElement)
@@ -33,6 +31,8 @@ btnPlayDomElement.addEventListener('click', function () {
     // console.log(difficultyDomElement)
     let difficultyValue = difficultyDomElement.options[difficultyDomElement.selectedIndex].value;
     console.log(difficultyValue);
+
+    // inizializiamo una varabile che co servirà per il conteggio delle cell
     let numberCell = -1
 
     // tramite la selezione del ciclo cambierà la difficoltà
